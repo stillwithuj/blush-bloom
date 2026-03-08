@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import FadeInUp from "./FadeInUp";
 
 import img1 from "../imgs/her01.jpg";
 import img2 from "../imgs/hero02.jpg";
@@ -23,7 +24,7 @@ export default function HeroSection() {
         setCurrent((prev) => (prev + 1) % images.length);
         setFading(false);
       }, 600);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -51,22 +52,25 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 w-full">
         <div className="max-w-lg">
 
-          {/* Heading */}
-          <h1
-            className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#6b4c7a] mb-6"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            Beautiful Nails,<br />Confident You
-          </h1>
+          <FadeInUp delay={1}>
+            <h1
+              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#6b4c7a] mb-6"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              Beautiful Nails,<br />Confident You
+            </h1>
+          </FadeInUp>
 
-          {/* Paragraph */}
-          <p
-            className="text-base md:text-lg text-[#7a5c8a]/85 leading-relaxed max-w-sm"
-            style={{ fontFamily: "'Lato', sans-serif", fontWeight: 300 }}
-          >
-            Welcome to Blush & Bloom, where elegance meets creativity.
-            We specialize in nail artistry that enhances your natural beauty.
-          </p>
+          <FadeInUp delay={2}>
+            <p
+              className="text-base md:text-lg text-[#7a5c8a]/85 leading-relaxed max-w-sm"
+              style={{ fontFamily: "'Lato', sans-serif", fontWeight: 300 }}
+            >
+              Welcome to Blush & Bloom, where elegance meets creativity.
+              We specialize in nail artistry that enhances your natural beauty.
+            </p>
+          </FadeInUp>
+
         </div>
       </div>
 
