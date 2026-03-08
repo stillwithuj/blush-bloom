@@ -63,7 +63,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-28 px-8 md:px-16 relative overflow-hidden">
+    <section id="contact" className="pt-28 pb-0 px-8 md:px-16 relative overflow-hidden">
 
       {/* Background blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -275,7 +275,7 @@ export default function Contact() {
       </div>
 
       {/* Footer line */}
-      <div className="mt-12 pt-5 border-t border-[#cdb4db]/30 text-center">
+      <div className="mt-6 pt-3 pb-4 border-t border-[#cdb4db]/30 text-center">
         <p
           className="text-xs text-[#7a5c8a]/60 tracking-widest"
           style={{ fontFamily: "'Lato', sans-serif", fontWeight: 300 }}
