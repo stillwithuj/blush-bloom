@@ -3,8 +3,9 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
-import Testimonials from "./components/Testimonials";
+import Gallery from "./components/Gallery";
 import Pricing from "./components/Pricing";
+import Contact from "./components/Contact";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,8 +29,9 @@ function App() {
       <HeroSection />
       <Services />
       <AboutUs />
-      <Testimonials />
+      <Gallery />
       <Pricing />
+      <Contact />
       </div>
     </>
   );

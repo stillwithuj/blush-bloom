@@ -20,3 +20,8 @@
 .fade-in-up-2 { animation-delay: 0.25s; }
 .fade-in-up-3 { animation-delay: 0.4s; }
 .fade-in-up-4 { animation-delay: 0.55s; }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
