@@ -4,7 +4,6 @@ import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
 import Gallery from "./components/Gallery";
-import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
       <Services />
       <AboutUs />
       <Gallery />
-      <Pricing />
       <Contact />
       </div>
     </>
