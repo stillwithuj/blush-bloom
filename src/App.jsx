@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import Features from "./components/Features";
+import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
-import Testimonials from "./components/Testimonials";
-import Pricing from "./components/Pricing";
+import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,10 +26,10 @@ function App() {
       <div className="min-h-screen bg-[#ffc8dd] text-white overflow-hidden">
       <Navbar scrolled={scrolled} />
       <HeroSection />
-      <Features />
+      <Services />
       <AboutUs />
-      <Testimonials />
-      <Pricing />
+      <Gallery />
+      <Contact />
       </div>
     </>
   );

@@ -5,8 +5,6 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar({ scrolled }) {
@@ -15,7 +13,7 @@ export default function Navbar({ scrolled }) {
   return (
     <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-6">
       <nav
-        className={`w-full max-w-5xl rounded-2xl border border-white/30 transition-all duration-700 ease-in-out overflow-hidden
+        className={`w-full max-w-7xl rounded-2xl border border-white/30 transition-all duration-700 ease-in-out overflow-hidden
           ${scrolled
             ? "bg-white/15 backdrop-blur-3xl shadow-2xl shadow-[#cdb4db]/40 opacity-90"
             : "bg-white/20 backdrop-blur-2xl shadow-xl shadow-[#bde0fe]/30"
@@ -33,7 +31,7 @@ export default function Navbar({ scrolled }) {
           <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/60 to-transparent" />
         </div>
 
-        <div className="relative px-6 py-3 flex items-center justify-between">
+        <div className="relative px-8 py-4 flex items-center justify-between">
 
           {/* Logo */}
           <a href="#home">
